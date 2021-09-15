@@ -1,6 +1,6 @@
 //Getting user input
-let height = $('inputHeight').val()
-let weight = $('inputWeight').val()
+let height = 180 //get user input from 180
+let weight = 140 //get user input from 140
 let message = ""
 let messageSum = ""
 
@@ -14,8 +14,10 @@ let total = sum.toFixed(2)
 
 //Check the condition
 function calculate() {
+
     let messageEl = document.getElementById("msgEl")
     let sumEl = document.getElementById("sumEl")
+
     if (sum < 18.5) {
         sumEl.textContent = "BMI Score : " + sum
         messageEl.textContent = "You are Underweight!"
