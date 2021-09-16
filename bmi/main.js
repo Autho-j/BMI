@@ -1,23 +1,20 @@
-//Getting user input
-let height = 180 //get user input from 180
-let weight = 140 //get user input from 140
-let message = ""
-let messageSum = ""
-
-//Calculating result
-let heightToMetre = height / 100;
-let heightTotal = heightToMetre * heightToMetre;
-let weightTotal = weight / 2.205;
-//formula
-let sum = Math.floor(weightTotal / heightTotal)
-let total = sum.toFixed(2)
-
-//Check the condition
 function calculate() {
+
+    //Getting user input
+    let height = document.getElementById("inputHeight").value
+    let weight = document.getElementById("inputWeight").value
 
     let messageEl = document.getElementById("msgEl")
     let sumEl = document.getElementById("sumEl")
 
+    //Calculating result
+    let heightToMetre = height / 100;
+    let heightTotal = heightToMetre * heightToMetre;
+    let weightTotal = weight / 2.205;
+    //formula
+    let sum = Math.floor(weightTotal / heightTotal)
+
+    //Check the condition
     if (sum < 18.5) {
         sumEl.textContent = "BMI Score : " + sum
         messageEl.textContent = "You are Underweight!"
