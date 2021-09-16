@@ -14,7 +14,7 @@
     <h1>
         BMI Calculator
     </h1>
-    <form>
+    <form onsubmit="event.preventDefault()">
         <br>
         <h2>
             Calculate Your BMI (Body Mass Index)
@@ -24,12 +24,12 @@
         <label>
             Type Your Height (cm)
         </label>
-        <input type='text' class='input' id='inputHeight' placeholder="Height" required>
+        <input type='text' class='input' id='inputHeight' placeholder=" Height " required>
         <label>
             Type Your Weight (lbs)
         </label>
-        <input type='text' class='input' id='inputWeight' placeholder="Weight" required>
-        <button type='submit' onclick="calculate()" class='btn'>Calculate</button>
+        <input type='text' class='input' id='inputWeight' placeholder="Weight " required>
+        <button type='submit' onclick="calculate() " class='btn'>Calculate</button>
         <br>
         <br>
         <h1 id='sumEl'>
@@ -42,7 +42,7 @@
     </form>
 
     <footer>
-        <a href="https://github.com/Autho-j" target='_blank' class='ref'><img src='./images/IMG_20210423_221900.png'>Developed by Thor-Shan</a>
+        <a href="https://github.com/Autho-j " target='_blank' class='ref'><img src='./images/IMG_20210423_221900.png'>Developed by Thor-Shan</a>
     </footer>
 </body>
 
