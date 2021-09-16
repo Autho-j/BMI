@@ -53,3 +53,28 @@ form {
     background-color: #205a7e;
     color: antiquewhite;
 }
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    float: right;
+    margin-top: 10%;
+}
+
+.ref {
+    border: none;
+    padding: 10px;
+    color: aqua;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ref:hover {
+    color: antiquewhite;
+}
+
+img {
+    border-radius: 50%;
+    width: 30px;
+}
