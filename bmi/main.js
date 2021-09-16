@@ -14,6 +14,9 @@ function calculate() {
     //formula
     let sum = Math.floor(weightTotal / heightTotal)
 
+    //referencing messge
+
+
     //Check the condition
     if (sum < 18.5) {
         sumEl.textContent = "BMI Score : " + sum
