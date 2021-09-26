@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>BMI Calculator</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./style.css'>
+    <script src='script.js'></script>
+</head>
+
+<body>
+    <h1>
+        BMI Calculator
+    </h1>
+    <form onsubmit="event.preventDefault()">
+        <br>
+        <h2>
+            Calculate Your BMI (Body Mass Index)
+        </h2>
+        <br>
+        <br>
+        <label>
+            Type Your Height (cm)
+        </label>
+        <input type='text' class='input' id='inputHeight' placeholder=" Height " maxLength="3" required>
+        <label>
+            Type Your Weight (lbs)
+        </label>
+        <input type='text' class='input' id='inputWeight' placeholder="Weight " maxlength="3" required>
+        <button type='submit' onclick="calculate() " class='btn'>Calculate</button>
+        <br>
+        <br>
+        <h1 id='sumEl'>
+            Result
+        </h1>
+        <br>
+        <h2 id='msgEl'>
+            Summary will be appeared here!
+        </h2>
+    </form>
+</body>
+
+</html>
